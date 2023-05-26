@@ -16,11 +16,11 @@ describe Solver do
     end
 
     it 'should accept when the number is positive' do
-      expect { @solver.factorial(1) }.not_to raise_error(error)
+      expect { @solver.factorial(1) }.not_to raise_error(ArgumentError)
     end
 
     it 'should raise an exception when the number is negative' do
-      expect { @solver.factorial(-1) }.to raise_error(error)
+      expect { @solver.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
 
